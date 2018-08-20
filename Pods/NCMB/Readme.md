@@ -19,14 +19,14 @@
 このSDKを利用する前に、ニフクラ mobile backendのアカウントを作成する必要があります。
 
 アカウント作成後のSDK導入手順については、
-[クイックスタート](http://mb.cloud.nifty.com/doc/quickstart_ios.html)をご覧ください。
+[クイックスタート](https://mbaas.nifcloud.com/doc/quickstart_ios.html)をご覧ください。
 
 ## 動作環境
 
 - iOS 5.1 ～ iOS 10.x
 - Xcode6.x ～ Xcode8.x
 - armv7, armv7s, arm64アーキテクチャ
-- iOS/Xcodeのバージョンに依って対応が必要となる可能性があります。詳細はニフクラ mobile backendの[ドキュメント](http://mb.cloud.nifty.com/doc/current/)をご覧ください。
+- iOS/Xcodeのバージョンに依って対応が必要となる可能性があります。詳細はニフクラ mobile backendの[ドキュメント](https://mbaas.nifcloud.com/doc/current/)をご覧ください。
 
 
 ## ライセンス
@@ -36,7 +36,7 @@
 ## 参考URL集
 
 - [ニフクラ  mobile backend](http://mb.cloud.nifty.com)
-- [ドキュメント](http://mb.cloud.nifty.com/doc)
+- [ドキュメント](https://mbaas.nifcloud.com/doc)
 - [ユーザーコミュニティ](https://github.com/NIFCloud-mbaas/UserCommunity)
 
 

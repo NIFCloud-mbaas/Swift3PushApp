@@ -4,8 +4,8 @@
 <center><img src="readme-img/001.png" alt="画像1" width="400px"></center>
 
 ## 概要
-* [ニフクラ mobile backend](http://mb.cloud.nifty.com/)の『プッシュ通知』機能を実装したサンプルプロジェクトです
-* 簡単な操作ですぐに [ニフクラ mobile backend](http://mb.cloud.nifty.com/)の機能を体験いただけます★☆
+* [ニフクラ mobile backend](https://mbaas.nifcloud.com/)の『プッシュ通知』機能を実装したサンプルプロジェクトです
+* 簡単な操作ですぐに [ニフクラ mobile backend](https://mbaas.nifcloud.com/)の機能を体験いただけます★☆
 * このサンプルはSwift3(iOS10)に対応しています
  * Swift2のサンプルは[こちら](https://github.com/natsumo/SwiftPushApp)
 
@@ -14,14 +14,14 @@
 
 <center><img src="readme-img/002.png" alt="画像2" width="300px"></center>
 
-注1：詳しくは[こちら](http://mb.cloud.nifty.com/price.htm)をご覧ください
+注1：詳しくは[こちら](https://mbaas.nifcloud.com/price.htm)をご覧ください
 
 <div style="page-break-before:always"></div>
 
 ## 準備
 ### 準備するもの
 * ニフクラ  mobile backend 会員登録
-  * 下記リンクより登録（無料）をお願いします<br>http://mb.cloud.nifty.com/
+  * 下記リンクより登録（無料）をお願いします<br>https://mbaas.nifcloud.com/
 * Mac と以下の環境
   * Xcode ver.8 以上推奨
 * 動作確認用端末
@@ -56,7 +56,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 <div style="page-break-before:always"></div>
 
 ### 1. ニフクラ  mobile backend の準備
-* ニフクラ  mobile backend にログインします<br>http://mb.cloud.nifty.com/
+* ニフクラ  mobile backend にログインします<br>https://mbaas.nifcloud.com/
 
 <center><img src="readme-img/003-1.png" alt="画像3-1" width="350px"></center>
 
@@ -183,7 +183,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 サンプルプロジェクトに実装済みの内容のご紹介
 
 #### SDKのインポートと初期設定
-* ニフクラ  mobile backend の[ドキュメント（クイックスタート）](http://mb.cloud.nifty.com/doc/current/introduction/quickstart_ios.html)をSwift版に書き換えたドキュメントをご用意していますので、ご活用ください
+* ニフクラ  mobile backend の[ドキュメント（クイックスタート）](https://mbaas.nifcloud.com/doc/current/introduction/quickstart_ios.html)をSwift版に書き換えたドキュメントをご用意していますので、ご活用ください
  * [SwiftでmBaaSを始めよう！(＜CocoaPods＞でuse_framewoks!を有効にした方法)](http://qiita.com/natsumo/items/57d3a4d9be16b0490965)
 
 <div style="page-break-before:always"></div>
