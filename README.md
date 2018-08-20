@@ -4,12 +4,12 @@
 <center><img src="readme-img/001.png" alt="画像1" width="400px"></center>
 
 ## 概要
-* [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)の『プッシュ通知』機能を実装したサンプルプロジェクトです
-* 簡単な操作ですぐに [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)の機能を体験いただけます★☆
+* [ニフクラ mobile backend](http://mb.cloud.nifty.com/)の『プッシュ通知』機能を実装したサンプルプロジェクトです
+* 簡単な操作ですぐに [ニフクラ mobile backend](http://mb.cloud.nifty.com/)の機能を体験いただけます★☆
 * このサンプルはSwift3(iOS10)に対応しています
  * Swift2のサンプルは[こちら](https://github.com/natsumo/SwiftPushApp)
 
-## ニフティクラウドmobile backendとは
+## ニフクラ mobile backendとは
 スマートフォンアプリのバックエンド機能（プッシュ通知・データストア・会員管理・ファイルストア・SNS連携・位置情報検索・スクリプト）が**開発不要**、しかも基本**無料**(注1)で使えるクラウドサービス！
 
 <center><img src="readme-img/002.png" alt="画像2" width="300px"></center>
@@ -20,7 +20,7 @@
 
 ## 準備
 ### 準備するもの
-* ニフティクラウド mobile backend 会員登録
+* ニフクラ  mobile backend 会員登録
   * 下記リンクより登録（無料）をお願いします<br>http://mb.cloud.nifty.com/
 * Mac と以下の環境
   * Xcode ver.8 以上推奨
@@ -37,12 +37,12 @@
 </small>
 
 ## プッシュ通知の仕組み
-* ニフティクラウドmobile backendのプッシュ通知は、iOSが提供している通知サービスを利用しています
+* ニフクラ mobile backendのプッシュ通知は、iOSが提供している通知サービスを利用しています
  * iOSの通知サービス　__APNs（Apple Push Notification Service）__
 
 <center><img src="readme-img/001.png" alt="画像1" width="400px"></center>
 
-* 上図のように、アプリ（Xcode）・サーバー（ニフティクラウドmobile backend）・通知サービス（APNs）の間でやり取りを行うため、認証が必要になります
+* 上図のように、アプリ（Xcode）・サーバー（ニフクラ mobile backend）・通知サービス（APNs）の間でやり取りを行うため、認証が必要になります
  * 認証に必要な鍵や証明書の作成は作業手順の「0.プッシュ通知機能使うための準備」で行います
 
 ## 作業の手順
@@ -55,8 +55,8 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 <div style="page-break-before:always"></div>
 
-### 1. ニフティクラウド mobile backend の準備
-* ニフティクラウド mobile backend にログインします<br>http://mb.cloud.nifty.com/
+### 1. ニフクラ  mobile backend の準備
+* ニフクラ  mobile backend にログインします<br>http://mb.cloud.nifty.com/
 
 <center><img src="readme-img/003-1.png" alt="画像3-1" width="350px"></center>
 
@@ -98,7 +98,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 ### 4. APIキーの設定
 
 * `AppDelegate.swift`を編集します
-* 先程ニフティクラウド mobile backend のダッシュボード上で確認したAPIキーを貼り付けます
+* 先程ニフクラ  mobile backend のダッシュボード上で確認したAPIキーを貼り付けます
 
 <center><img src="readme-img/007.png" alt="画像7" width="350px"></center>
 
@@ -155,7 +155,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 * インストールしたアプリを起動します
   * __注意__：プッシュ通知の許可を求めるアラートが出たら、必ず許可してください！
 * 起動されたらこの時点でデバイストークンが取得されます
-* ニフティクラウド mobile backend のダッシュボードで「データストア」＞「installation」クラスを確認してみましょう！
+* ニフクラ  mobile backend のダッシュボードで「データストア」＞「installation」クラスを確認してみましょう！
 
 <center><img src="readme-img/012.png" alt="画像12" width="500px"></center>
 
@@ -165,7 +165,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 ### 7. プッシュ通知を送りましょう！
 * いよいよです！実際にプッシュ通知を送ってみましょう！
-* ニフティクラウド mobile backend のダッシュボードで「プッシュ通知」＞「＋新しいプッシュ通知」をクリックします
+* ニフクラ  mobile backend のダッシュボードで「プッシュ通知」＞「＋新しいプッシュ通知」をクリックします
 * プッシュ通知のフォームが開かれます
 * 必要な項目を入力してプッシュ通知を作成します
 
@@ -183,7 +183,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 サンプルプロジェクトに実装済みの内容のご紹介
 
 #### SDKのインポートと初期設定
-* ニフティクラウド mobile backend の[ドキュメント（クイックスタート）](http://mb.cloud.nifty.com/doc/current/introduction/quickstart_ios.html)をSwift版に書き換えたドキュメントをご用意していますので、ご活用ください
+* ニフクラ  mobile backend の[ドキュメント（クイックスタート）](http://mb.cloud.nifty.com/doc/current/introduction/quickstart_ios.html)をSwift版に書き換えたドキュメントをご用意していますので、ご活用ください
  * [SwiftでmBaaSを始めよう！(＜CocoaPods＞でuse_framewoks!を有効にした方法)](http://qiita.com/natsumo/items/57d3a4d9be16b0490965)
 
 <div style="page-break-before:always"></div>
@@ -194,6 +194,6 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 <center><img src="readme-img/018.png" alt="画像18" width="400px"></center>
 
-* デバイストークン取得後、`didRegisterForRemoteNotificationsWithDeviceToken`メソッドが呼ばれ、取得したデバイストークンをニフティクラウド mobile backend 上に保存しています
+* デバイストークン取得後、`didRegisterForRemoteNotificationsWithDeviceToken`メソッドが呼ばれ、取得したデバイストークンをニフクラ  mobile backend 上に保存しています
 
 <center><img src="readme-img/019.png" alt="画像19" width="500px"></center>
