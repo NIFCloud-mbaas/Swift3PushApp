@@ -102,6 +102,7 @@
 				BDD36F1B1D9A3BB500151031 /* Frameworks */,
 				BDD36F1C1D9A3BB500151031 /* Resources */,
 				617137222C43C4A3A6248CEC /* [CP] Embed Pods Frameworks */,
+				71CC56C07C39D1972B49045A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,7 +121,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = "NIFCLOUD Corporation";
+				ORGANIZATIONNAME = "FUJITSU CLOUD TECHNOLOGIES LIMITED";
 				TargetAttributes = {
 					BDD36F1D1D9A3BB500151031 = {
 						CreatedOnToolsVersion = 8.0;
@@ -182,6 +183,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift3PushApp/Pods-Swift3PushApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71CC56C07C39D1972B49045A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift3PushApp/Pods-Swift3PushApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D26EA0F0959EF6B6E3512C08 /* [CP] Check Pods Manifest.lock */ = {
