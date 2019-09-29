@@ -18,33 +18,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let applicationkey = "YOUR_NCMB_APPLICATIONKEY"
     let clientkey      = "YOUR_NCMB_CLIENTKEY"
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         //********** SDKの初期化 **********
-        NCMB.setApplicationKey(applicationkey, clientKey: clientkey)
+        NCMB.initialize(applicationKey: applicationkey, clientKey: clientkey)
 
-        // デバイストークンの要求
-        if #available(iOS 10.0, *){
-            /** iOS10以上 **/
-            let center = UNUserNotificationCenter.current()
-            center.requestAuthorization(options: [.alert, .badge, .sound]) {granted, error in
-                if error != nil {
-                    // エラー時の処理
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .badge, .sound]) {granted, error in
+            if error != nil {
+                // エラー時の処理
 
-                    return
-                }
-                if granted {
-                    // デバイストークンの要求
-                    UIApplication.shared.registerForRemoteNotifications()
-                }
+                return
             }
-        } else {
-            /** iOS8以上iOS10未満 **/
-            //通知のタイプを設定したsettingを用意
-            let setting = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
-            //通知のタイプを設定
-            application.registerUserNotificationSettings(setting)
-            //DevoceTokenを要求
-            application.registerForRemoteNotifications()
+            if granted {
+                // デバイストークンの要求
+                UIApplication.shared.registerForRemoteNotifications()
+            }
         }
 
         return true
@@ -53,17 +41,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // デバイストークンが取得されたら呼び出されるメソッド
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         // 端末情報を扱うNCMBInstallationのインスタンスを作成
-        let installation : NCMBInstallation = NCMBInstallation.current()
+        let installation : NCMBInstallation = NCMBInstallation.currentInstallation
         // デバイストークンの設定
-        installation.setDeviceTokenFrom(deviceToken)
+        installation.setDeviceTokenFromData(data: deviceToken)
         // 端末情報をデータストアに登録
-        installation.saveInBackground {error in
-            if error != nil {
-                // 端末情報の登録に失敗した時の処理
-
-            } else {
-                // 端末情報の登録に成功した時の処理
-
+        installation.saveInBackground {result in
+            switch result {
+                case .success:
+                    // 端末情報の登録に成功した時の処理
+                    break
+            case let .failure(error):
+                    // 端末情報の登録に失敗した時の処理
+                    print(error)
+                    break
             }
         }
 
