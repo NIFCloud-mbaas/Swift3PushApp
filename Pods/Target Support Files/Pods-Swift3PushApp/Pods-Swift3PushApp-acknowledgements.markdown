@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## NCMB
 
- Copyright 2017 FUJITSU CLOUD TECHNOLOGIES LIMITED All Rights Reserved.
+ Copyright 2019 FUJITSU CLOUD TECHNOLOGIES LIMITED All Rights Reserved.
  
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -211,7 +211,7 @@ And it is licensed under the MIT license. See the bottom of LICENSE file for the
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright [yyyy] [name of copyright owner]
+   Copyright [2019] [FUJITSU CLOUD TECHNOLOGIES LIMITED]
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
