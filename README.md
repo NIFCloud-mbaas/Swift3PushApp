@@ -4,24 +4,24 @@
 <center><img src="readme-img/001.png" alt="画像1" width="400px"></center>
 
 ## 概要
-* [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)の『プッシュ通知』機能を実装したサンプルプロジェクトです
-* 簡単な操作ですぐに [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)の機能を体験いただけます★☆
+* [ニフクラmobile backend](https://mbaas.nifcloud.com/)の『プッシュ通知』機能を実装したサンプルプロジェクトです
+* 簡単な操作ですぐに [ニフクラmobile backend](https://mbaas.nifcloud.com/)の機能を体験いただけます★☆
 * このサンプルはSwift3(iOS10)に対応しています
  * Swift2のサンプルは[こちら](https://github.com/natsumo/SwiftPushApp)
 
-## ニフティクラウドmobile backendとは
+## ニフクラmobile backendとは
 スマートフォンアプリのバックエンド機能（プッシュ通知・データストア・会員管理・ファイルストア・SNS連携・位置情報検索・スクリプト）が**開発不要**、しかも基本**無料**(注1)で使えるクラウドサービス！
 
 <center><img src="readme-img/002.png" alt="画像2" width="300px"></center>
 
-注1：詳しくは[こちら](http://mb.cloud.nifty.com/price.htm)をご覧ください
+注1：詳しくは[こちら](https://mbaas.nifcloud.com/price.htm)をご覧ください
 
 <div style="page-break-before:always"></div>
 
 ## 準備
 ### 準備するもの
 * ニフティクラウド mobile backend 会員登録
-  * 下記リンクより登録（無料）をお願いします<br>http://mb.cloud.nifty.com/
+  * 下記リンクより登録（無料）をお願いします<br>https://mbaas.nifcloud.com/
 * Mac と以下の環境
   * Xcode ver.8 以上推奨
 * 動作確認用端末
@@ -30,19 +30,19 @@
 
 <small>
 #### 参考：検証済み動作環境
-* macOS Sierra 10.12.5
-* Xcode ver. 8.3.3
-* iPhone 6+ ver. 10.0.1
+* Mac OS Mojave 10.14.4
+* Xcode ver.11.2 (11B52)
+* iPhone XS Max ver. 13.2.2
   * このサンプルアプリは、実機ビルドが必要です
 </small>
 
 ## プッシュ通知の仕組み
-* ニフティクラウドmobile backendのプッシュ通知は、iOSが提供している通知サービスを利用しています
+* ニフクラmobile backendのプッシュ通知は、iOSが提供している通知サービスを利用しています
  * iOSの通知サービス　__APNs（Apple Push Notification Service）__
 
 <center><img src="readme-img/001.png" alt="画像1" width="400px"></center>
 
-* 上図のように、アプリ（Xcode）・サーバー（ニフティクラウドmobile backend）・通知サービス（APNs）の間でやり取りを行うため、認証が必要になります
+* 上図のように、アプリ（Xcode）・サーバー（ニフクラmobile backend）・通知サービス（APNs）の間でやり取りを行うため、認証が必要になります
  * 認証に必要な鍵や証明書の作成は作業手順の「0.プッシュ通知機能使うための準備」で行います
 
 ## 作業の手順
@@ -56,7 +56,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 <div style="page-break-before:always"></div>
 
 ### 1. ニフティクラウド mobile backend の準備
-* ニフティクラウド mobile backend にログインします<br>http://mb.cloud.nifty.com/
+* ニフティクラウド mobile backend にログインします<br>https://mbaas.nifcloud.com/
 
 <center><img src="readme-img/003-1.png" alt="画像3-1" width="350px"></center>
 
@@ -183,7 +183,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 サンプルプロジェクトに実装済みの内容のご紹介
 
 #### SDKのインポートと初期設定
-* ニフティクラウド mobile backend の[ドキュメント（クイックスタート）](http://mb.cloud.nifty.com/doc/current/introduction/quickstart_ios.html)をSwift版に書き換えたドキュメントをご用意していますので、ご活用ください
+* ニフティクラウド mobile backend の[ドキュメント（クイックスタート）](https://mbaas.nifcloud.com/doc/current/introduction/quickstart_swift.html)をSwift版に書き換えたドキュメントをご用意していますので、ご活用ください
  * [SwiftでmBaaSを始めよう！(＜CocoaPods＞でuse_framewoks!を有効にした方法)](http://qiita.com/natsumo/items/57d3a4d9be16b0490965)
 
 <div style="page-break-before:always"></div>
