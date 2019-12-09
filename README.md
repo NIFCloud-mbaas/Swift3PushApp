@@ -1,40 +1,38 @@
 # 【iOS13 Swift】<br>プッシュ通知を組み込もう！
-*2016/09/27作成（2019/12/06更新）*
+*2016/09/27作成（2019/12/09更新）*
 
 <center><img src="readme-img/001.png" alt="画像1" width="400px"></center>
 
 ## 概要
 * [ニフクラmobile backend](https://mbaas.nifcloud.com/)の『プッシュ通知』機能を実装したサンプルプロジェクトです
 * 簡単な操作ですぐに [ニフクラmobile backend](https://mbaas.nifcloud.com/)の機能を体験いただけます★☆
-* このサンプルはSwift3(iOS10)に対応しています
- * Swift2のサンプルは[こちら](https://github.com/natsumo/SwiftPushApp)
+* このサンプルはSwift4.2(iOS12)に対応しています
 
 ## ニフクラmobile backendとは
 スマートフォンアプリのバックエンド機能（プッシュ通知・データストア・会員管理・ファイルストア・SNS連携・位置情報検索・スクリプト）が**開発不要**、しかも基本**無料**(注1)で使えるクラウドサービス！
 
 <center><img src="readme-img/002.png" alt="画像2" width="300px"></center>
 
-注1：詳しくは[こちら](https://mbaas.nifcloud.com/price.htm)をご覧ください
+注1：詳しくは[こちら](https://mbaas.nifcloud.com/function.htm)をご覧ください
 
 <div style="page-break-before:always"></div>
 
 ## 準備
 ### 準備するもの
-* ニフティクラウド mobile backend 会員登録
+* ニフクラmobile backend backend 会員登録
   * 下記リンクより登録（無料）をお願いします<br>https://mbaas.nifcloud.com/
 * Mac と以下の環境
-  * Xcode ver.8 以上推奨
+  * Xcode ver.10 以上推奨
 * 動作確認用端末
   * iPhone ver.10 以上推奨
 * Lightning ケーブル
 
-<small>
 #### 参考：検証済み動作環境
 * Mac OS Mojave 10.14.4
 * Xcode ver.11.2 (11B52)
 * iPhone XS Max ver. 13.2.2
   * このサンプルアプリは、実機ビルドが必要です
-</small>
+
 
 ## プッシュ通知の仕組み
 * ニフクラmobile backendのプッシュ通知は、iOSが提供している通知サービスを利用しています
@@ -47,7 +45,7 @@
 
 ## 作業の手順
 ### 0.プッシュ通知機能使うための準備
-__[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発用)](https://github.com/natsumo/iOS_Certificate)__
+__[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発用)](https://github.com/NIFCLOUD-mbaas/iOS_Certificate)__
 * 上記のドキュメントをご覧の上、必要な証明書類の作成をお願いします
  * 証明書の作成には[Apple Developer Program](https://developer.apple.com/account/)の登録（有料）が必要です
 
@@ -55,8 +53,8 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 <div style="page-break-before:always"></div>
 
-### 1. ニフティクラウド mobile backend の準備
-* ニフティクラウド mobile backend にログインします<br>https://mbaas.nifcloud.com/
+### 1. ニフクラmobile backend backend の準備
+* ニフクラmobile backend backend にログインします<br>https://mbaas.nifcloud.com/
 
 <center><img src="readme-img/003-1.png" alt="画像3-1" width="350px"></center>
 
@@ -82,7 +80,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 ### 2. サンプルプロジェクトのダウンロード
 
-* 下記リンクからプロジェクトをMacにダウンロードします<br> https://github.com/natsumo/Swift3PushApp/archive/master.zip
+* 下記リンクからプロジェクトをMacにダウンロードします<br> https://github.com/NIFCLOUD-mbaas/Swift3PushApp/archive/master.zip
 
 <div style="page-break-before:always"></div>
 
@@ -98,7 +96,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 ### 4. APIキーの設定
 
 * `AppDelegate.swift`を編集します
-* 先程ニフティクラウド mobile backend のダッシュボード上で確認したAPIキーを貼り付けます
+* 先程ニフクラmobile backend backend のダッシュボード上で確認したAPIキーを貼り付けます
 
 <center><img src="readme-img/007.png" alt="画像7" width="350px"></center>
 
@@ -155,7 +153,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 * インストールしたアプリを起動します
   * __注意__：プッシュ通知の許可を求めるアラートが出たら、必ず許可してください！
 * 起動されたらこの時点でデバイストークンが取得されます
-* ニフティクラウド mobile backend のダッシュボードで「データストア」＞「installation」クラスを確認してみましょう！
+* ニフクラmobile backend backend のダッシュボードで「データストア」＞「installation」クラスを確認してみましょう！
 
 <center><img src="readme-img/012.png" alt="画像12" width="500px"></center>
 
@@ -165,7 +163,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 ### 7. プッシュ通知を送りましょう！
 * いよいよです！実際にプッシュ通知を送ってみましょう！
-* ニフティクラウド mobile backend のダッシュボードで「プッシュ通知」＞「＋新しいプッシュ通知」をクリックします
+* ニフクラmobile backend backend のダッシュボードで「プッシュ通知」＞「＋新しいプッシュ通知」をクリックします
 * プッシュ通知のフォームが開かれます
 * 必要な項目を入力してプッシュ通知を作成します
 
@@ -183,8 +181,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 サンプルプロジェクトに実装済みの内容のご紹介
 
 #### SDKのインポートと初期設定
-* ニフティクラウド mobile backend の[ドキュメント（クイックスタート）](https://mbaas.nifcloud.com/doc/current/introduction/quickstart_swift.html)をSwift版に書き換えたドキュメントをご用意していますので、ご活用ください
- * [SwiftでmBaaSを始めよう！(＜CocoaPods＞でuse_framewoks!を有効にした方法)](http://qiita.com/natsumo/items/57d3a4d9be16b0490965)
+* ニフクラmobile backend backend の[ドキュメント（クイックスタート）](https://mbaas.nifcloud.com/doc/current/introduction/quickstart_swift.html)をSwift版に書き換えたドキュメントをご用意していますので、ご活用ください
 
 <div style="page-break-before:always"></div>
 
@@ -194,6 +191,6 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 <center><img src="readme-img/018.png" alt="画像18" width="400px"></center>
 
-* デバイストークン取得後、`didRegisterForRemoteNotificationsWithDeviceToken`メソッドが呼ばれ、取得したデバイストークンをニフティクラウド mobile backend 上に保存しています
+* デバイストークン取得後、`didRegisterForRemoteNotificationsWithDeviceToken`メソッドが呼ばれ、取得したデバイストークンをニフクラmobile backend backend 上に保存しています
 
 <center><img src="readme-img/019.png" alt="画像19" width="500px"></center>
