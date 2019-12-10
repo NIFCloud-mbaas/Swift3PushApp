@@ -102,7 +102,6 @@
 				BDD36F1B1D9A3BB500151031 /* Frameworks */,
 				BDD36F1C1D9A3BB500151031 /* Resources */,
 				617137222C43C4A3A6248CEC /* [CP] Embed Pods Frameworks */,
-				71CC56C07C39D1972B49045A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,7 +172,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Swift3PushApp/Pods-Swift3PushApp-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Swift3PushApp/Pods-Swift3PushApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/NCMB/NCMB.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -182,22 +181,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift3PushApp/Pods-Swift3PushApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		71CC56C07C39D1972B49045A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift3PushApp/Pods-Swift3PushApp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swift3PushApp/Pods-Swift3PushApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D26EA0F0959EF6B6E3512C08 /* [CP] Check Pods Manifest.lock */ = {
@@ -358,7 +342,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7eec186b-38ba-4f59-82b7-5dec68c76274";
 				PROVISIONING_PROFILE_SPECIFIER = "Ikeda PushApp Provisioning Profile";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -374,7 +358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fjct.natsumo.ikeda.pushapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
