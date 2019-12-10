@@ -19,7 +19,7 @@
 
 ## 準備
 ### 準備するもの
-* ニフクラmobile backend backend 会員登録
+* ニフクラmobile backend 会員登録
   * 下記リンクより登録（無料）をお願いします<br>https://mbaas.nifcloud.com/
 * Mac と以下の環境
   * Xcode ver.10 以上推奨
@@ -53,8 +53,8 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 <div style="page-break-before:always"></div>
 
-### 1. ニフクラmobile backend backend の準備
-* ニフクラmobile backend backend にログインします<br>https://mbaas.nifcloud.com/
+### 1. ニフクラmobile backend の準備
+* ニフクラmobile backend にログインします<br>https://mbaas.nifcloud.com/
 
 <center><img src="readme-img/003-1.png" alt="画像3-1" width="350px"></center>
 
@@ -96,7 +96,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 ### 4. APIキーの設定
 
 * `AppDelegate.swift`を編集します
-* 先程ニフクラmobile backend backend のダッシュボード上で確認したAPIキーを貼り付けます
+* 先程ニフクラmobile backend のダッシュボード上で確認したAPIキーを貼り付けます
 
 <center><img src="readme-img/007.png" alt="画像7" width="350px"></center>
 
@@ -153,7 +153,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 * インストールしたアプリを起動します
   * __注意__：プッシュ通知の許可を求めるアラートが出たら、必ず許可してください！
 * 起動されたらこの時点でデバイストークンが取得されます
-* ニフクラmobile backend backend のダッシュボードで「データストア」＞「installation」クラスを確認してみましょう！
+* ニフクラmobile backend のダッシュボードで「データストア」＞「installation」クラスを確認してみましょう！
 
 <center><img src="readme-img/012.png" alt="画像12" width="500px"></center>
 
@@ -163,7 +163,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 ### 7. プッシュ通知を送りましょう！
 * いよいよです！実際にプッシュ通知を送ってみましょう！
-* ニフクラmobile backend backend のダッシュボードで「プッシュ通知」＞「＋新しいプッシュ通知」をクリックします
+* ニフクラmobile backend のダッシュボードで「プッシュ通知」＞「＋新しいプッシュ通知」をクリックします
 * プッシュ通知のフォームが開かれます
 * 必要な項目を入力してプッシュ通知を作成します
 
@@ -181,7 +181,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 サンプルプロジェクトに実装済みの内容のご紹介
 
 #### SDKのインポートと初期設定
-* ニフクラmobile backend backend の[ドキュメント（クイックスタート）](https://mbaas.nifcloud.com/doc/current/introduction/quickstart_swift.html)をSwift版に書き換えたドキュメントをご用意していますので、ご活用ください
+* ニフクラmobile backend の[ドキュメント（クイックスタート）](https://mbaas.nifcloud.com/doc/current/introduction/quickstart_swift.html)をSwift版に書き換えたドキュメントをご用意していますので、ご活用ください
 
 <div style="page-break-before:always"></div>
 
@@ -191,6 +191,6 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 <center><img src="readme-img/018.png" alt="画像18" width="400px"></center>
 
-* デバイストークン取得後、`didRegisterForRemoteNotificationsWithDeviceToken`メソッドが呼ばれ、取得したデバイストークンをニフクラmobile backend backend 上に保存しています
+* デバイストークン取得後、`didRegisterForRemoteNotificationsWithDeviceToken`メソッドが呼ばれ、取得したデバイストークンをニフクラmobile backend 上に保存しています
 
 <center><img src="readme-img/019.png" alt="画像19" width="500px"></center>
