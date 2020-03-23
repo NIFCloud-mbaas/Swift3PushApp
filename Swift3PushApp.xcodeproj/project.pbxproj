@@ -341,7 +341,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Swift3PushApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fjct.natsumo.ikeda.pushapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nifcloud.swift3pushapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -358,7 +358,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Swift3PushApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fjct.natsumo.ikeda.pushapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nifcloud.swift3pushapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
