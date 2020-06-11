@@ -1,12 +1,12 @@
 # 【iOS13 Swift】<br>プッシュ通知を組み込もう！
-*2016/09/27作成（2019/12/09更新）*
+*2016/09/27作成（2020/06/11更新）*
 
 <center><img src="readme-img/001.png" alt="画像1" width="400px"></center>
 
 ## 概要
 * [ニフクラmobile backend](https://mbaas.nifcloud.com/)の『プッシュ通知』機能を実装したサンプルプロジェクトです
 * 簡単な操作ですぐに [ニフクラmobile backend](https://mbaas.nifcloud.com/)の機能を体験いただけます★☆
-* このサンプルはSwift4.2(iOS12)に対応しています
+* このサンプルはSwift5(iOS13)に対応しています
 
 ## ニフクラmobile backendとは
 スマートフォンアプリのバックエンド機能（プッシュ通知・データストア・会員管理・ファイルストア・SNS連携・位置情報検索・スクリプト）が**開発不要**、しかも基本**無料**(注1)で使えるクラウドサービス！
@@ -21,18 +21,16 @@
 ### 準備するもの
 * ニフクラmobile backend 会員登録
   * 下記リンクより登録（無料）をお願いします<br>https://mbaas.nifcloud.com/
-* Mac と以下の環境
-  * Xcode ver.10 以上推奨
+* Mac
 * 動作確認用端末
-  * iPhone ver.10 以上推奨
 * Lightning ケーブル
 
 #### 参考：検証済み動作環境
 * Mac OS Mojave 10.14.4
 * Xcode ver.11.2 (11B52)
+* iPhone 8  iOS 13.3
 * iPhone XS Max ver. 13.2.2
   * このサンプルアプリは、実機ビルドが必要です
-
 
 ## プッシュ通知の仕組み
 * ニフクラmobile backendのプッシュ通知は、iOSが提供している通知サービスを利用しています
@@ -54,7 +52,8 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 <div style="page-break-before:always"></div>
 
 ### 1. ニフクラmobile backend の準備
-* ニフクラmobile backend にログインします<br>https://mbaas.nifcloud.com/
+* ニフクラmobile backend にログインします
+  * サイト https://mbaas.nifcloud.com/ 右上の「ログイン」ボタンをクリックします
 
 <center><img src="readme-img/003-1.png" alt="画像3-1" width="350px"></center>
 
@@ -80,14 +79,14 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 ### 2. サンプルプロジェクトのダウンロード
 
-* 下記リンクからプロジェクトをMacにダウンロードします<br> https://github.com/NIFCLOUD-mbaas/Swift3PushApp/archive/master.zip
+* 下記リンクからプロジェクトをMacにダウンロードします<br> https://github.com/NIFCLOUD-mbaas/SwiftPushApp_iOS13/archive/master.zip
 
 <div style="page-break-before:always"></div>
 
 ### 3. Xcodeでアプリを起動
 
-* ダウンロードしたフォルダを開き、「__Swift3PushApp.xcworkspace__」をダブルクリックしてXcode開きます(白い方です)
-  * 「Swift3PushApp.xcodeproj」（青い方）ではないので注意！
+* ダウンロードしたフォルダを開き、「__SwiftPushApp.xcworkspace__」をダブルクリックしてXcode開きます(白い方です)
+  * 「SwiftPushApp.xcodeproj」（青い方）ではないので注意！
 
 <center><img src="readme-img/009.png" alt="画像9" width="50px"><img src="readme-img/008.png" alt="画像8" width="100px"></center>
 
@@ -189,8 +188,37 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 * `AppDelegate.swift`の`didFinishLaunchingWithOptions`メソッド内に、「APNsに対してデバイストークンを要求するコード」を記述しています
   * デバイストークンの要求はiOSのバージョンによってコードが異なるため、場合分けして記述しています
 
-<center><img src="readme-img/018.png" alt="画像18" width="400px"></center>
+```swift
+let center = UNUserNotificationCenter.current()
+center.requestAuthorization(options: [.alert, .badge, .sound]) {granted, error in
+    if error != nil {
+        // エラー時の処理
+        return
+    }
+    if granted {
+        // デバイストークンの要求
+        UIApplication.shared.registerForRemoteNotifications()
+    }
+}
+```
 
 * デバイストークン取得後、`didRegisterForRemoteNotificationsWithDeviceToken`メソッドが呼ばれ、取得したデバイストークンをニフクラmobile backend 上に保存しています
 
-<center><img src="readme-img/019.png" alt="画像19" width="500px"></center>
+```swift
+// 端末情報を扱うNCMBInstallationのインスタンスを作成
+let installation : NCMBInstallation = NCMBInstallation.currentInstallation
+// デバイストークンの設定
+installation.setDeviceTokenFromData(data: deviceToken)
+// 端末情報をデータストアに登録
+installation.saveInBackground {result in
+    switch result {
+        case .success:
+            // 端末情報の登録に成功した時の処理
+            break
+        case let .failure(error):
+            // 端末情報の登録に失敗した時の処理
+            print(error)
+            break
+    }
+}
+```
