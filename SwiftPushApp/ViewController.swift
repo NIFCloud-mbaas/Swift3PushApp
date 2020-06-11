@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Swift3PushApp
+//  SwiftPushApp
 //
 //  Created by Natsumo Ikeda on 2016/09/27 (update on 2020/03/23).
 //  Copyright 2020 FUJITSU CLOUD TECHNOLOGIES LIMITED All Rights Reserved.
