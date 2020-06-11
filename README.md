@@ -15,7 +15,7 @@
 
 注1：詳しくは[こちら](https://mbaas.nifcloud.com/function.htm)をご覧ください
 
-<div style="page-break-before:always"></div>
+
 
 ## 準備
 ### 準備するもの
@@ -49,7 +49,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 <center><img src="readme-img/i002.png" alt="画像i002" width="450px"></center>
 
-<div style="page-break-before:always"></div>
+
 
 ### 1. ニフクラmobile backend の準備
 * ニフクラmobile backend にログインします
@@ -65,7 +65,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 * mobile backend を既に使用したことがある場合は、画面上方のメニューバーにある「+新しいアプリ」をクリックすると同じ画面が表示されます
 
-<div style="page-break-before:always"></div>
+
 
 * アプリ作成されると下図のような画面になります
 * この２種類のAPIキー（アプリケーションキーとクライアントキー）はこの後 iOSアプリ との連携のために使用します
@@ -81,7 +81,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 * 下記リンクからプロジェクトをMacにダウンロードします<br> https://github.com/NIFCLOUD-mbaas/SwiftPushApp_iOS13/archive/master.zip
 
-<div style="page-break-before:always"></div>
+
 
 ### 3. Xcodeでアプリを起動
 
@@ -99,7 +99,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 <center><img src="readme-img/007.png" alt="画像7" width="350px"></center>
 
-<div style="page-break-before:always"></div>
+
 
 * それぞれ `YOUR_NCMB_APPLICATION_KEY` と `YOUR_NCMB_CLIENT_KEY` の部分を書き換えます
  * このとき、ダブルクォーテーション（`"`）を消さないように注意してください！
@@ -113,7 +113,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 <center><img src="readme-img/i029.png" alt="画像i29" width="400px"></center>
 
-<div style="page-break-before:always"></div>
+
 
 * 追加されると、下図のようになります
   * 追加した情報があっていればOKです
@@ -122,29 +122,23 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 * 確認できたら閉じます
 * 次に「TARGETS」 ＞「General」を開きます
-
-<center><img src="readme-img/014.png" alt="画像14" width="450px"></center>
-
 * 「Idenrity」＞「Bundle Identifier」を入力します
-* 「Bundle Identifier」には AppID 作成時に指定した「Bundle ID」を入力してください
+  * AppID 作成時に指定した「Bundle ID」を入力してください
 
-<div style="page-break-before:always"></div>
+<center><img src="readme-img/020.png" alt="画像20" width="450px"></center>
 
-* 続けて「Signing(Debug)」＞「Provisioning Profile」を設定します
-* 使用するプロビジョニングプロファイルをプルダウンから選択します
-  * プロビジョニングプロファイルはダウンロードしたものを一度 __ダブルクリック__ して認識させておく必要があります（プルダウンに表示されない場合はダブルクリックを実施後設定してください）
-* 選択すると以下のようになります
+* 次に「TARGETS」 ＞「Signing & Capabilities」を開きます
+* 「Teame」を選択します
+  * 先ほど「Preferences」で設定したアカウント情報を選択します
+  * 「Bundle Identifier」に応じて正しい「Provisioning Profile」が選択されればOKです
+  * 正しく読み込まれない場合は、ダウンロードしたプロビジョニングプロファイルを一度 __ダブルクリック__ して読み込んだ後リトライしてください
 
-<center><img src="readme-img/015.png" alt="画像15" width="450px"></center>
+<center><img src="readme-img/021.png" alt="画像21" width="450px"></center>
 
-* 最後に「TARGETS」＞「Capabilities」を開き、「Push Notifications」を __ON__ に設定します
-* 設定すると以下のようになります
-
-<center><img src="readme-img/016.png" alt="画像16" width="450px"></center>
-
+* 上記画像の下方に表示されている「Push Notifications」はプッシュ通知を利用するために必要な設定です
+  * このサンプルでは予め設定してあります
+  * 上方「+Capability」から追加できます
 * これで準備は完了です
-
-<div style="page-break-before:always"></div>
 
 ### 6.動作確認
 * lightningケーブルで登録した動作確認用iPhoneをMacにつなぎます
@@ -158,7 +152,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 * ここで端末側で起動したアプリは一度閉じておきます
 
-<div style="page-break-before:always"></div>
+
 
 ### 7. プッシュ通知を送りましょう！
 * いよいよです！実際にプッシュ通知を送ってみましょう！
@@ -170,7 +164,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 * 端末を確認しましょう！
 
-<div style="page-break-before:always"></div>
+
 
 * 少し待つとプッシュ通知が届きます！！！
 
@@ -182,7 +176,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 #### SDKのインポートと初期設定
 * ニフクラmobile backend の[ドキュメント（クイックスタート）](https://mbaas.nifcloud.com/doc/current/introduction/quickstart_swift.html)をSwift版に書き換えたドキュメントをご用意していますので、ご活用ください
 
-<div style="page-break-before:always"></div>
+
 
 #### ロジック
 * `AppDelegate.swift`の`didFinishLaunchingWithOptions`メソッド内に、「APNsに対してデバイストークンを要求するコード」を記述しています
