@@ -1,12 +1,12 @@
 # 【iOS13 Swift】<br>プッシュ通知を組み込もう！
-*2016/09/27作成（2019/12/09更新）*
+*2016/09/27作成（2020/07/09更新）*
 
 <center><img src="readme-img/001.png" alt="画像1" width="400px"></center>
 
 ## 概要
 * [ニフクラmobile backend](https://mbaas.nifcloud.com/)の『プッシュ通知』機能を実装したサンプルプロジェクトです
 * 簡単な操作ですぐに [ニフクラmobile backend](https://mbaas.nifcloud.com/)の機能を体験いただけます★☆
-* このサンプルはSwift4.2(iOS12)に対応しています
+* このサンプルはSwift5(iOS13)に対応しています
 
 ## ニフクラmobile backendとは
 スマートフォンアプリのバックエンド機能（プッシュ通知・データストア・会員管理・ファイルストア・SNS連携・位置情報検索・スクリプト）が**開発不要**、しかも基本**無料**(注1)で使えるクラウドサービス！
@@ -15,24 +15,22 @@
 
 注1：詳しくは[こちら](https://mbaas.nifcloud.com/function.htm)をご覧ください
 
-<div style="page-break-before:always"></div>
+
 
 ## 準備
 ### 準備するもの
 * ニフクラmobile backend 会員登録
   * 下記リンクより登録（無料）をお願いします<br>https://mbaas.nifcloud.com/
-* Mac と以下の環境
-  * Xcode ver.10 以上推奨
+* Mac
 * 動作確認用端末
-  * iPhone ver.10 以上推奨
 * Lightning ケーブル
 
 #### 参考：検証済み動作環境
 * Mac OS Mojave 10.14.4
 * Xcode ver.11.2 (11B52)
+* iPhone 8  iOS 13.3
 * iPhone XS Max ver. 13.2.2
   * このサンプルアプリは、実機ビルドが必要です
-
 
 ## プッシュ通知の仕組み
 * ニフクラmobile backendのプッシュ通知は、iOSが提供している通知サービスを利用しています
@@ -51,10 +49,11 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 <center><img src="readme-img/i002.png" alt="画像i002" width="450px"></center>
 
-<div style="page-break-before:always"></div>
+
 
 ### 1. ニフクラmobile backend の準備
-* ニフクラmobile backend にログインします<br>https://mbaas.nifcloud.com/
+* ニフクラmobile backend にログインします
+  * サイト https://mbaas.nifcloud.com/ 右上の「ログイン」ボタンをクリックします
 
 <center><img src="readme-img/003-1.png" alt="画像3-1" width="350px"></center>
 
@@ -66,7 +65,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 * mobile backend を既に使用したことがある場合は、画面上方のメニューバーにある「+新しいアプリ」をクリックすると同じ画面が表示されます
 
-<div style="page-break-before:always"></div>
+
 
 * アプリ作成されると下図のような画面になります
 * この２種類のAPIキー（アプリケーションキーとクライアントキー）はこの後 iOSアプリ との連携のために使用します
@@ -80,14 +79,14 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 ### 2. サンプルプロジェクトのダウンロード
 
-* 下記リンクからプロジェクトをMacにダウンロードします<br> https://github.com/NIFCLOUD-mbaas/Swift3PushApp/archive/master.zip
+* 下記リンクからプロジェクトをMacにダウンロードします<br> https://github.com/NIFCLOUD-mbaas/SwiftPushApp/archive/master.zip
 
-<div style="page-break-before:always"></div>
+
 
 ### 3. Xcodeでアプリを起動
 
-* ダウンロードしたフォルダを開き、「__Swift3PushApp.xcworkspace__」をダブルクリックしてXcode開きます(白い方です)
-  * 「Swift3PushApp.xcodeproj」（青い方）ではないので注意！
+* ダウンロードしたフォルダを開き、「__SwiftPushApp.xcworkspace__」をダブルクリックしてXcode開きます(白い方です)
+  * 「SwiftPushApp.xcodeproj」（青い方）ではないので注意！
 
 <center><img src="readme-img/009.png" alt="画像9" width="50px"><img src="readme-img/008.png" alt="画像8" width="100px"></center>
 
@@ -100,7 +99,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 <center><img src="readme-img/007.png" alt="画像7" width="350px"></center>
 
-<div style="page-break-before:always"></div>
+
 
 * それぞれ `YOUR_NCMB_APPLICATION_KEY` と `YOUR_NCMB_CLIENT_KEY` の部分を書き換えます
  * このとき、ダブルクォーテーション（`"`）を消さないように注意してください！
@@ -114,7 +113,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 <center><img src="readme-img/i029.png" alt="画像i29" width="400px"></center>
 
-<div style="page-break-before:always"></div>
+
 
 * 追加されると、下図のようになります
   * 追加した情報があっていればOKです
@@ -123,29 +122,23 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 * 確認できたら閉じます
 * 次に「TARGETS」 ＞「General」を開きます
-
-<center><img src="readme-img/014.png" alt="画像14" width="450px"></center>
-
 * 「Idenrity」＞「Bundle Identifier」を入力します
-* 「Bundle Identifier」には AppID 作成時に指定した「Bundle ID」を入力してください
+  * AppID 作成時に指定した「Bundle ID」を入力してください
 
-<div style="page-break-before:always"></div>
+<center><img src="readme-img/020.png" alt="画像20" width="450px"></center>
 
-* 続けて「Signing(Debug)」＞「Provisioning Profile」を設定します
-* 使用するプロビジョニングプロファイルをプルダウンから選択します
-  * プロビジョニングプロファイルはダウンロードしたものを一度 __ダブルクリック__ して認識させておく必要があります（プルダウンに表示されない場合はダブルクリックを実施後設定してください）
-* 選択すると以下のようになります
+* 次に「TARGETS」 ＞「Signing & Capabilities」を開きます
+* 「Teame」を選択します
+  * 先ほど「Preferences」で設定したアカウント情報を選択します
+  * 「Bundle Identifier」に応じて正しい「Provisioning Profile」が選択されればOKです
+  * 正しく読み込まれない場合は、ダウンロードしたプロビジョニングプロファイルを一度 __ダブルクリック__ して読み込んだ後リトライしてください
 
-<center><img src="readme-img/015.png" alt="画像15" width="450px"></center>
+<center><img src="readme-img/021.png" alt="画像21" width="450px"></center>
 
-* 最後に「TARGETS」＞「Capabilities」を開き、「Push Notifications」を __ON__ に設定します
-* 設定すると以下のようになります
-
-<center><img src="readme-img/016.png" alt="画像16" width="450px"></center>
-
+* 上記画像の下方に表示されている「Push Notifications」はプッシュ通知を利用するために必要な設定です
+  * このサンプルでは予め設定してあります
+  * 上方「+Capability」から追加できます
 * これで準備は完了です
-
-<div style="page-break-before:always"></div>
 
 ### 6.動作確認
 * lightningケーブルで登録した動作確認用iPhoneをMacにつなぎます
@@ -159,7 +152,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 * ここで端末側で起動したアプリは一度閉じておきます
 
-<div style="page-break-before:always"></div>
+
 
 ### 7. プッシュ通知を送りましょう！
 * いよいよです！実際にプッシュ通知を送ってみましょう！
@@ -171,7 +164,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 * 端末を確認しましょう！
 
-<div style="page-break-before:always"></div>
+
 
 * 少し待つとプッシュ通知が届きます！！！
 
@@ -183,14 +176,43 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 #### SDKのインポートと初期設定
 * ニフクラmobile backend の[ドキュメント（クイックスタート）](https://mbaas.nifcloud.com/doc/current/introduction/quickstart_swift.html)をSwift版に書き換えたドキュメントをご用意していますので、ご活用ください
 
-<div style="page-break-before:always"></div>
+
 
 #### ロジック
 * `AppDelegate.swift`の`didFinishLaunchingWithOptions`メソッド内に、「APNsに対してデバイストークンを要求するコード」を記述しています
   * デバイストークンの要求はiOSのバージョンによってコードが異なるため、場合分けして記述しています
 
-<center><img src="readme-img/018.png" alt="画像18" width="400px"></center>
+```swift
+let center = UNUserNotificationCenter.current()
+center.requestAuthorization(options: [.alert, .badge, .sound]) {granted, error in
+    if error != nil {
+        // エラー時の処理
+        return
+    }
+    if granted {
+        // デバイストークンの要求
+        UIApplication.shared.registerForRemoteNotifications()
+    }
+}
+```
 
 * デバイストークン取得後、`didRegisterForRemoteNotificationsWithDeviceToken`メソッドが呼ばれ、取得したデバイストークンをニフクラmobile backend 上に保存しています
 
-<center><img src="readme-img/019.png" alt="画像19" width="500px"></center>
+```swift
+// 端末情報を扱うNCMBInstallationのインスタンスを作成
+let installation : NCMBInstallation = NCMBInstallation.currentInstallation
+// デバイストークンの設定
+installation.setDeviceTokenFromData(data: deviceToken)
+// 端末情報をデータストアに登録
+installation.saveInBackground {result in
+    switch result {
+        case .success:
+            // 端末情報の登録に成功した時の処理
+            break
+        case let .failure(error):
+            // 端末情報の登録に失敗した時の処理
+            print(error)
+            break
+    }
+}
+```
