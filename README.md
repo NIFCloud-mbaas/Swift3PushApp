@@ -1,5 +1,5 @@
 # 【iOS13 Swift】<br>プッシュ通知を組み込もう！
-*2016/09/27作成（2020/06/11更新）*
+*2016/09/27作成（2020/07/09更新）*
 
 <center><img src="readme-img/001.png" alt="画像1" width="400px"></center>
 
@@ -79,7 +79,7 @@ __[【iOS】プッシュ通知の受信に必要な証明書の作り方(開発�
 
 ### 2. サンプルプロジェクトのダウンロード
 
-* 下記リンクからプロジェクトをMacにダウンロードします<br> https://github.com/NIFCLOUD-mbaas/SwiftPushApp_iOS13/archive/master.zip
+* 下記リンクからプロジェクトをMacにダウンロードします<br> https://github.com/NIFCLOUD-mbaas/SwiftPushApp/archive/master.zip
 
 
 
