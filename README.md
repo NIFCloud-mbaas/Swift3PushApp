@@ -28,9 +28,9 @@
 * Lightning ケーブル
 
 #### 参考：検証済み動作環境
-* Mac OS Mojave 10.14.4
-* Xcode ver.11.2 (11B52)
-* iPhone XS Max ver. 13.2.2
+* Mac OS 10.15(Catalina)
+* Xcode ver. 12.0
+* iPhone11 (iOS14.0)
   * このサンプルアプリは、実機ビルドが必要です
 
 
