@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_Swift3PushAppVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_Swift3PushAppVersionString[];
+FOUNDATION_EXPORT double Pods_SwiftPushAppVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_SwiftPushAppVersionString[];
 

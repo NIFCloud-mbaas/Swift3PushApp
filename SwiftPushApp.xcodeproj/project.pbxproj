@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B2F8BE34A4DCE729BA95109 /* Pods_Swift3PushApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86308717D2A8E8D7DE6A769B /* Pods_Swift3PushApp.framework */; };
+		7B2F8BE34A4DCE729BA95109 /* Pods_SwiftPushApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86308717D2A8E8D7DE6A769B /* Pods_SwiftPushApp.framework */; };
 		BDD36F221D9A3BB500151031 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD36F211D9A3BB500151031 /* AppDelegate.swift */; };
 		BDD36F241D9A3BB500151031 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD36F231D9A3BB500151031 /* ViewController.swift */; };
 		BDD36F271D9A3BB500151031 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDD36F251D9A3BB500151031 /* Main.storyboard */; };
@@ -16,11 +16,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		08A11F00C4290E83C7D99435 /* Pods-Swift3PushApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift3PushApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift3PushApp/Pods-Swift3PushApp.release.xcconfig"; sourceTree = "<group>"; };
-		5F5209CBFAF753783005DEE7 /* Pods-Swift3PushApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift3PushApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift3PushApp/Pods-Swift3PushApp.debug.xcconfig"; sourceTree = "<group>"; };
-		86308717D2A8E8D7DE6A769B /* Pods_Swift3PushApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift3PushApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD5194FC1F665F1F005C6ED9 /* Swift3PushApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Swift3PushApp.entitlements; sourceTree = "<group>"; };
-		BDD36F1E1D9A3BB500151031 /* Swift3PushApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift3PushApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A11F00C4290E83C7D99435 /* Pods-SwiftPushApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPushApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPushApp/Pods-SwiftPushApp.release.xcconfig"; sourceTree = "<group>"; };
+		5F5209CBFAF753783005DEE7 /* Pods-SwiftPushApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftPushApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftPushApp/Pods-SwiftPushApp.debug.xcconfig"; sourceTree = "<group>"; };
+		86308717D2A8E8D7DE6A769B /* Pods_SwiftPushApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftPushApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD5194FC1F665F1F005C6ED9 /* SwiftPushApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftPushApp.entitlements; sourceTree = "<group>"; };
+		BDD36F1E1D9A3BB500151031 /* SwiftPushApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPushApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD36F211D9A3BB500151031 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDD36F231D9A3BB500151031 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BDD36F261D9A3BB500151031 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -34,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B2F8BE34A4DCE729BA95109 /* Pods_Swift3PushApp.framework in Frameworks */,
+				7B2F8BE34A4DCE729BA95109 /* Pods_SwiftPushApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,7 +44,7 @@
 		929691DA4FA3967058E3FA32 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				86308717D2A8E8D7DE6A769B /* Pods_Swift3PushApp.framework */,
+				86308717D2A8E8D7DE6A769B /* Pods_SwiftPushApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -52,8 +52,8 @@
 		A17CD6ED6E091011A0FB9248 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5F5209CBFAF753783005DEE7 /* Pods-Swift3PushApp.debug.xcconfig */,
-				08A11F00C4290E83C7D99435 /* Pods-Swift3PushApp.release.xcconfig */,
+				5F5209CBFAF753783005DEE7 /* Pods-SwiftPushApp.debug.xcconfig */,
+				08A11F00C4290E83C7D99435 /* Pods-SwiftPushApp.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 		BDD36F151D9A3BB500151031 = {
 			isa = PBXGroup;
 			children = (
-				BDD36F201D9A3BB500151031 /* Swift3PushApp */,
+				BDD36F201D9A3BB500151031 /* SwiftPushApp */,
 				BDD36F1F1D9A3BB500151031 /* Products */,
 				A17CD6ED6E091011A0FB9248 /* Pods */,
 				929691DA4FA3967058E3FA32 /* Frameworks */,
@@ -71,15 +71,15 @@
 		BDD36F1F1D9A3BB500151031 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BDD36F1E1D9A3BB500151031 /* Swift3PushApp.app */,
+				BDD36F1E1D9A3BB500151031 /* SwiftPushApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BDD36F201D9A3BB500151031 /* Swift3PushApp */ = {
+		BDD36F201D9A3BB500151031 /* SwiftPushApp */ = {
 			isa = PBXGroup;
 			children = (
-				BD5194FC1F665F1F005C6ED9 /* Swift3PushApp.entitlements */,
+				BD5194FC1F665F1F005C6ED9 /* SwiftPushApp.entitlements */,
 				BDD36F211D9A3BB500151031 /* AppDelegate.swift */,
 				BDD36F231D9A3BB500151031 /* ViewController.swift */,
 				BDD36F251D9A3BB500151031 /* Main.storyboard */,
@@ -87,15 +87,15 @@
 				BDD36F2A1D9A3BB500151031 /* LaunchScreen.storyboard */,
 				BDD36F2D1D9A3BB500151031 /* Info.plist */,
 			);
-			path = Swift3PushApp;
+			path = SwiftPushApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BDD36F1D1D9A3BB500151031 /* Swift3PushApp */ = {
+		BDD36F1D1D9A3BB500151031 /* SwiftPushApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BDD36F301D9A3BB500151031 /* Build configuration list for PBXNativeTarget "Swift3PushApp" */;
+			buildConfigurationList = BDD36F301D9A3BB500151031 /* Build configuration list for PBXNativeTarget "SwiftPushApp" */;
 			buildPhases = (
 				D26EA0F0959EF6B6E3512C08 /* [CP] Check Pods Manifest.lock */,
 				BDD36F1A1D9A3BB500151031 /* Sources */,
@@ -107,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = Swift3PushApp;
-			productName = Swift3PushApp;
-			productReference = BDD36F1E1D9A3BB500151031 /* Swift3PushApp.app */;
+			name = SwiftPushApp;
+			productName = SwiftPushApp;
+			productReference = BDD36F1E1D9A3BB500151031 /* SwiftPushApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -135,7 +135,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BDD36F191D9A3BB500151031 /* Build configuration list for PBXProject "Swift3PushApp" */;
+			buildConfigurationList = BDD36F191D9A3BB500151031 /* Build configuration list for PBXProject "SwiftPushApp" */;
 			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -149,7 +149,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BDD36F1D1D9A3BB500151031 /* Swift3PushApp */,
+				BDD36F1D1D9A3BB500151031 /* SwiftPushApp */,
 			);
 		};
 /* End PBXProject section */
@@ -173,17 +173,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Swift3PushApp/Pods-Swift3PushApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/NCMB/NCMB.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftPushApp/Pods-SwiftPushApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NCMB.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftPushApp/Pods-SwiftPushApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swift3PushApp/Pods-Swift3PushApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftPushApp/Pods-SwiftPushApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D26EA0F0959EF6B6E3512C08 /* [CP] Check Pods Manifest.lock */ = {
@@ -197,7 +196,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Swift3PushApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SwiftPushApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -334,14 +333,14 @@
 		};
 		BDD36F311D9A3BB500151031 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F5209CBFAF753783005DEE7 /* Pods-Swift3PushApp.debug.xcconfig */;
+			baseConfigurationReference = 5F5209CBFAF753783005DEE7 /* Pods-SwiftPushApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Swift3PushApp/Swift3PushApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SwiftPushApp/SwiftPushApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Swift3PushApp/Info.plist;
+				INFOPLIST_FILE = SwiftPushApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,14 +355,14 @@
 		};
 		BDD36F321D9A3BB500151031 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08A11F00C4290E83C7D99435 /* Pods-Swift3PushApp.release.xcconfig */;
+			baseConfigurationReference = 08A11F00C4290E83C7D99435 /* Pods-SwiftPushApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Swift3PushApp/Swift3PushApp.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SwiftPushApp/SwiftPushApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Swift3PushApp/Info.plist;
+				INFOPLIST_FILE = SwiftPushApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +377,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BDD36F191D9A3BB500151031 /* Build configuration list for PBXProject "Swift3PushApp" */ = {
+		BDD36F191D9A3BB500151031 /* Build configuration list for PBXProject "SwiftPushApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BDD36F2E1D9A3BB500151031 /* Debug */,
@@ -387,7 +386,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BDD36F301D9A3BB500151031 /* Build configuration list for PBXNativeTarget "Swift3PushApp" */ = {
+		BDD36F301D9A3BB500151031 /* Build configuration list for PBXNativeTarget "SwiftPushApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BDD36F311D9A3BB500151031 /* Debug */,
