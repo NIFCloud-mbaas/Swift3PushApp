@@ -7,4 +7,9 @@ target 'SwiftPushApp' do
 
   # Pods for SwiftPushApp
   pod 'NCMB', :git => 'https://github.com/NIFCLOUD-mbaas/ncmb_swift.git'
+  
+  target 'SwiftPushAppUITests' do
+    inherit! :search_paths
+    pod 'NCMB', :git => 'https://github.com/NIFCLOUD-mbaas/ncmb_swift.git'
+  end
 end
